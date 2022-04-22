@@ -225,15 +225,12 @@ header {
   margin-left: 10px;
 }
 
-/* Popular game starts here */
+/* Popular game & Buy Game starts here */
 
 .section-1 {
   width: 100%;
   height: 160vh;
   background: #0f1923;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .section-10 {
@@ -250,50 +247,54 @@ header {
   position: relative;
   font-weight: 400;
 }
-.section-1-img {
+.img-section {
   display: flex;
   justify-content: space-between;
 }
-.section-1-img .img {
+.img {
   width: 150px;
   height: 160px;
-  background: url(PUBG.png);
   background-size: cover;
   background-position: center;
   margin-right: 10px;
   border-radius: 10px;
 }
-.section-1-img .img-2 {
+.img-1 {
+  background: url(PUBG.png);
+  background-size: cover;
+  background-position: center;
+}
+.img-2 {
   background: url(pes.png);
   background-size: cover;
   background-position: center;
 }
-.section-1-img .img-3 {
+.img-3 {
   background: url(Fortnite.png);
   background-size: cover;
   background-position: center;
 }
-.section-1-img .img-4 {
+.img-4 {
   background: url(OIP.png);
   background-size: cover;
   background-position: center;
 }
-.section-1-img .img-5 {
+.img-5 {
   background: url(fifa.png);
   background-size: cover;
   background-position: center;
 }
-.section-1-img .img-6 {
+.img-6 {
   background: url(GTA.png);
   background-size: cover;
   background-position: center;
 }
-.section-1-img .img-7 {
+.img-7 {
   background: url(cod.png);
   background-size: cover;
   background-position: center;
 }
-.section-1-img .img-8 {
+.img-8 {
   background: url(val.png);
   background-size: cover;
   background-position: center;
@@ -302,88 +303,19 @@ header {
   transform: translateY(-10px);
 }
 
-/* Popular game end here */
-
-.section-1 hr {
-  margin: 40px auto;
-  width: 70%;
+.gap {
+  padding-top: 40px;
+  position: relative;
 }
-
-/* Buy game starts here */
-
 .game-categories {
   width: 70%;
   margin: 0 auto;
   position: relative;
 }
 
-.game-categories h1 {
-  font-size: 1.5rem;
-  color: #fec53a;
-}
-
-.game-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.gc {
-  width: 150px;
-  height: 160px;
-  background-size: cover;
-  background-position: center;
-  margin: 20px 0px 0px 0;
-  border-radius: 10px;
-}
-
-.gc:hover {
-  transform: translateY(-10px);
-}
-
-.left {
-  padding-top: 40px;
-  position: relative;
-}
-
-.sec-1 {
-  background: url(PUBG.png);
-  background-size: cover;
-  background-position: center;
-}
-.sec-2 {
-  background: url(pes.png);
-  background-size: cover;
-  background-position: center;
-}
-.sec-3 {
-  background: url(Fortnite.png);
-  background-size: cover;
-  background-position: center;
-}
-.sec-4 {
-  background: url(OIP.png);
-  background-size: cover;
-  background-position: center;
-}
-.sec-5 {
-  background: url(fifa.png);
-  background-size: cover;
-  background-position: center;
-}
-.sec-6 {
-  background: url(GTA.png);
-  background-size: cover;
-  background-position: center;
-}
-.sec-7 {
-  background: url(cod.png);
-  background-size: cover;
-  background-position: center;
-}
-.sec-8 {
-  background: url(val.png);
-  background-size: cover;
-  background-position: center;
+.section-1 hr {
+  margin: 40px auto;
+  width: 70%;
 }
 
 /* cart desine start here */
@@ -394,7 +326,7 @@ header {
   background: rgb(43, 123, 165);
   padding: 2px;
   text-align: center;
-  margin-left: 24px;
+  margin-left: 22px;
   padding-top: 6px;
   border-radius: 7px;
   margin-top: 10px;
@@ -405,14 +337,14 @@ header {
   background: rgb(2, 136, 209);
 }
 
-.game-section a {
+.img-section a {
   text-decoration: none;
   color: black;
 }
 
 /* game cart end here */
 
-/* Buy game end here */
+/* Popular game & Buy Game end here */
 
 /* Game section end here */
 
