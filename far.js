@@ -35,3 +35,46 @@ function myfunc(event) {
   localStorage.setItem("Is_medile_east", z);
   localStorage.setItem("Is_date_of_birth", dob);
 }
+
+function myfunc(event1) {
+  var cartCountValue = 0;
+  var cartCount = $(".cart .count");
+  $(cartCount).text(cartCountValue);
+
+  $(".game-cart").on("click", function () {
+    var gameBtn = this;
+    var cartCountPosition = $(cartCount).offset();
+    var btnPosition = $(this).offset();
+    var leftPos =
+      cartCountPosition.left < btnPosition.left
+        ? btnPosition.left - (btnPosition.left - cartCountPosition.left)
+        : cartCountPosition.left;
+
+    var topPos =
+      cartCountPosition.top < btnPosition.top
+        ? cartCountPosition.top
+        : cartCountPosition.top;
+    $(gameBtn).append("<span class='count'>1<span>");
+
+    $(gameBtn)
+      .find(".count")
+      .each(function (i, count) {
+        $(count)
+          .offset({
+            left: leftPos,
+            top: topPos,
+          })
+          .animate(
+            {
+              opcity: 0,
+            },
+            800,
+            function () {
+              $(this).remove();
+              cartCountValue++;
+              $(cartCount).text(cartCountValue);
+            }
+          );
+      });
+  });
+});

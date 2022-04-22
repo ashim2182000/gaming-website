@@ -1,4 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap"); */
+/* Page body design */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +10,17 @@ body {
   font-family: "Poppins", sans-serif;
   height: 350vh;
 }
+
+/* Page body design */
+
 .container {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
+
+/* Header part design start here */
+
 header {
   width: 100%;
   height: 10vh;
@@ -25,6 +29,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
   width: 300px;
   height: 10vh;
@@ -36,59 +41,63 @@ header {
   clip-path: polygon(0% 0%, 74% 0, 94% 49%, 69% 100%, 0% 100%);
   padding: 10px;
 }
+
 .logo p {
   width: 130px;
   margin-left: 10px;
   font-size: 20px;
 }
+
 .logo .fas {
   font-size: 50px;
 }
+
+/* Navbar part design start here */
+
 .navbar {
   display: flex;
   width: 50%;
   justify-content: space-between;
 }
-ul.navbar li a {
+
+.navbar a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
-ul.navbar li a:hover {
+
+.navbar a:hover {
   color: #b6082e;
 }
 
-.a {
-  display: flex;
-  clip-path: polygon(31% 0, 100% 0, 100% 100%, 0% 100%);
-}
-#search {
-  background-repeat: no-repeat;
-  font-size: 0.9rem;
-  padding: 13px 30px;
-  background-position: 10px 14px;
-  width: 180px;
-  height: 8px;
-}
-.shop {
+/* Navbar part design end here */
+
+/* Shopping Cart design start here */
+
+.cart {
   width: 35px;
   height: 35px;
   background: whitesmoke;
   align-items: center;
   padding: 10px;
   border-radius: 12px;
+  cursor: pointer;
 }
-input[type="text"] {
-  width: 100%;
-  padding: 5px 20px;
-  font-size: 1rem;
-  margin: 15px 0;
-  box-sizing: border-box;
-
-  border: 2px solid salmon;
-  border-radius: 100px;
-  /* border: none;
-  border-bottom: 3px solid salmon; */
+.count {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 18px;
+  transform: translate(-50%, -50%);
+  right: 55px;
+  background-color: #000;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  border-radius: 400px;
+  font-size: 14px;
+  transition: all ease 1s;
+  z-index: 1;
 }
 
 #btn {
@@ -101,10 +110,52 @@ input[type="text"] {
   padding-top: 20px;
   padding-left: 130px;
   display: flex;
+  clip-path: polygon(31% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+/* Shopping Cart design start here */
+
+/* Header part design end here */
+
+/* 1st Animation Part start here */
+
+.profile {
+  height: 100px;
+  margin-top: 20px;
+}
+
+.box {
+  background: none;
+  width: 280px;
+  height: 100px;
+  left: 160px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  animation-name: animations1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animations1 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(270%);
+    color: #e2200e;
+  }
+}
+
+/* 1st Animation Part end here */
+
 /* Content desc starts here */
-.content-wrapper {
+
+/* Body and Logo part start here */
+
+.cont {
   width: 80%;
   min-height: 70vh;
   margin: auto;
@@ -120,9 +171,7 @@ input[type="text"] {
   line-height: 2rem;
   margin-bottom: 10px;
 }
-.content-desc span {
-  color: #fec53a;
-}
+
 .btn2 {
   width: 320px;
   height: 10vh;
@@ -139,94 +188,26 @@ input[type="text"] {
   text-align: left;
   cursor: pointer;
 }
+
 .btn2 a {
   text-decoration: none;
   color: white;
 }
-.hii {
-  width: 350px;
-  height: 400px;
-  background: linear-gradient(rgba(27, 10, 88, 0.849), rgb(204, 46, 14));
+
+.game-logo {
+  width: 470px;
+  height: 430px;
+  background: url(sk.png);
   background-size: cover;
   background-position: center;
+  left: 10px;
   position: relative;
-}
-.profile {
-  height: 100px;
 }
 
-.box {
-  background: none;
-  width: 280px;
-  height: 100px;
-  left: 200px;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  position: relative;
-  padding-top: 15px;
-  animation-name: harry2;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: alternate;
-  animation-timing-function: ease-in-out;
-}
-.box-2 {
-  background: none;
-  margin-top: 10px;
-  width: 320px;
-  height: 100px;
-  left: 192px;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  position: relative;
-  padding-top: 15px;
-  animation-name: harry3;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: alternate;
-  animation-timing-function: ease-in-out;
-}
-.pp1 {
-  background-color: #0d0214;
-}
+/* Body and Logo part end here */
 
-@keyframes harry2 {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(320%);
-    color: #e2200e;
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes harry3 {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(255%);
-    color: #e2200e;
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.hii::after {
-  content: "";
-  width: 400px;
-  height: 400px;
-  background: url(p1.png);
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  bottom: 0px;
-  left: -150px;
-}
+/* Game section Start here */
+
 .logo-section {
   display: flex;
   align-items: center;
@@ -243,30 +224,25 @@ input[type="text"] {
   color: #fec53a;
   margin-left: 10px;
 }
-/* Section one starts here */
+
+/* Popular game starts here */
 
 .section-1 {
   width: 100%;
-  height: 150vh;
+  height: 160vh;
   background: #0f1923;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+
 .section-10 {
   padding-top: 50px;
   width: 70%;
   margin: auto;
   position: relative;
 }
-.section-1 hr {
-  margin: 40px auto;
-  width: 70%;
-}
-.dex {
-  margin: 0 auto;
-  width: 45%;
-}
+
 .section-1 h1 {
   width: 500px;
   color: #fec53a;
@@ -325,132 +301,128 @@ input[type="text"] {
 .img:hover {
   transform: translateY(-10px);
 }
-.r {
-  position: absolute;
-  width: 220px;
-  right: -20.5%;
-  bottom: -10%;
-  padding: 30px;
-  height: 400px;
-  border-radius: 5px;
-  background-color: aliceblue;
-  box-shadow: rgb(255, 254, 254);
+
+/* Popular game end here */
+
+.section-1 hr {
+  margin: 40px auto;
+  width: 70%;
 }
-.r hr {
-  margin-bottom: 18px;
-}
-.r p {
-  display: flex;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-.r a {
-  background-color: #9748ad;
-  color: #000;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  height: 40px;
-  line-height: 40px;
-  font-weight: 900;
-  cursor: pointer;
-}
-/* Section 3 starts here */
+
+/* Buy game starts here */
+
 .game-categories {
   width: 70%;
   margin: 0 auto;
   position: relative;
 }
+
 .game-categories h1 {
   font-size: 1.5rem;
   color: #fec53a;
 }
-.game-wrapper {
+
+.game-section {
   display: flex;
   justify-content: space-between;
 }
-.gw {
+
+.gc {
   width: 150px;
   height: 160px;
   background-size: cover;
   background-position: center;
-  margin: 20px 45px 0px 0;
+  margin: 20px 0px 0px 0;
   border-radius: 10px;
 }
-.gw:hover {
+
+.gc:hover {
   transform: translateY(-10px);
 }
+
 .left {
   padding-top: 40px;
   position: relative;
 }
 
-.gw-1 {
+.sec-1 {
   background: url(PUBG.png);
   background-size: cover;
   background-position: center;
 }
-.gw-2 {
+.sec-2 {
   background: url(pes.png);
   background-size: cover;
   background-position: center;
 }
-.gw-3 {
+.sec-3 {
   background: url(Fortnite.png);
   background-size: cover;
   background-position: center;
 }
-.gw-4 {
+.sec-4 {
   background: url(OIP.png);
   background-size: cover;
   background-position: center;
 }
-.gw-5 {
+.sec-5 {
   background: url(fifa.png);
   background-size: cover;
   background-position: center;
 }
-.gw-6 {
+.sec-6 {
   background: url(GTA.png);
   background-size: cover;
   background-position: center;
 }
-.gw-7 {
+.sec-7 {
   background: url(cod.png);
   background-size: cover;
   background-position: center;
 }
-.gw-8 {
+.sec-8 {
   background: url(val.png);
   background-size: cover;
   background-position: center;
 }
+
+/* cart desine start here */
+
 .game-cart {
-  width: 60%;
+  width: 70%;
   height: 30px;
   background: rgb(43, 123, 165);
   padding: 2px;
   text-align: center;
-  margin-left: 15px;
+  margin-left: 24px;
   padding-top: 6px;
   border-radius: 7px;
   margin-top: 10px;
   color: whitesmoke;
 }
+
 .game-cart:hover {
   background: rgb(2, 136, 209);
 }
-.game-wrapper a {
+
+.game-section a {
   text-decoration: none;
   color: black;
 }
+
+/* game cart end here */
+
+/* Buy game end here */
+
+/* Game section end here */
+
+/* Tournament start here  */
+
 .section-2 {
   width: 100%;
   height: 60vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712));
+  background-color: #000;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -506,7 +478,121 @@ input[type="text"] {
   background-position: center;
 }
 
-/* FOoter section */
+/* Tournament End here */
+
+/* News Section Start here */
+
+.pp1 {
+  background-color: #0d0214;
+}
+
+.box-2 {
+  background: none;
+  margin-top: 10px;
+  width: 320px;
+  height: 100px;
+  left: 192px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 15px;
+  animation-name: animations2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animations2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(255%);
+    color: #e2200e;
+  }
+}
+
+/* cart design */
+
+.bodyx {
+  min-height: 63vh;
+  width: 100%;
+  background: #0d0214;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerxy {
+  width: 1050px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerxy .card {
+  position: relative;
+}
+
+.card .facex {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.card .facex.facex1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.facex2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(-100px);
+}
+
+.card:hover .facex.facex2 {
+  transform: translateY(0);
+}
+
+.contentxy a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.contentxy a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.facex.facex1 {
+  transform: translateY(100px);
+}
+.containerxy .card:hover .facex.facex1 {
+  transform: translateY(-7px);
+}
+
+/* cart design */
+
+/* News section end here */
+
+/* Short link start here */
+
 footer {
   width: 100%;
   height: 40vh;
@@ -541,18 +627,16 @@ ul li a:hover {
   font-size: 0.98rem;
   background: none;
 }
-.footer-bottom {
-  width: 100%;
-  height: 10vh;
-  background: #1b1919;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/* Short Link end here */
+
+.dex {
+  margin: 0 auto;
+  width: 45%;
 }
-.footer-bottom span {
-  color: #fec53a;
-}
+
+/* Social Site Start here */
+
 .icon-12 {
   background-color: #07010a;
   display: flex;
@@ -586,83 +670,18 @@ ul li a:hover {
   font-size: 1.25rem;
   background: none;
 }
-/* news card code start */
 
-.bodyx {
-  min-height: 60vh;
+/* Social site End here */
+
+.footer-bottom {
   width: 100%;
-  background: #0d0214;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.containerxy {
-  width: 1050px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.containerxy .card {
-  position: relative;
-}
-.card .facex {
-  width: 300px;
-  height: 200px;
-  transition: 0.5s;
-}
-.card .facex.facex1 {
-  position: relative;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-.facex2 {
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 10px 1px rgba(245, 243, 243, 0.8);
-  transform: translateY(-100px);
-}
-.card:hover .facex.facex2 {
-  transform: translateY(0);
-}
-/* .facex.facex2 .contentxy {
-  margin: 0;
-} */
-.contentxy a {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-}
-.contentxy a:hover {
-  background-color: #333;
+  height: 10vh;
+  background: #1b1919;
   color: #fff;
-}
-.facex.facex1 .contentxy {
-  transform: 0.5;
-}
-.containerxy .card .facex.facex1 {
-  position: relative;
-  background: #333;
   display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
+  justify-content: center;
 }
-.containerxy .card:hover .facex.facex1 {
-  transform: translateY(0);
-  background-color: none;
+.footer-bottom span {
+  color: #fec53a;
 }
-
-/* news card code end */
