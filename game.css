@@ -449,7 +449,7 @@ header {
 /* cart design */
 
 .news-part {
-  min-height: 63vh;
+  height: 63vh;
   width: 100%;
   background: #0d0214;
   display: flex;
@@ -458,10 +458,10 @@ header {
 }
 
 .news-1 {
-  width: 1050px;
+  width: 1100px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .news-1 .news-card {
@@ -516,7 +516,7 @@ header {
   transform: translateY(100px);
 }
 .news-1 .news-card:hover .nesw-2.nesw-22 {
-  transform: translateY(-7px);
+  transform: translateY(0px);
 }
 
 /* cart design */
